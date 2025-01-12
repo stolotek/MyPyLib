@@ -1,0 +1,12 @@
+# Excluded directories
+venv
+__pycache__
+docs
+.git
+
+# Excluded files
+.env
+.gitignore
+env.ps1
+README.md
+temp.ipynb
