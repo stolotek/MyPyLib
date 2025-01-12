@@ -32,7 +32,9 @@ def merge_files(input_dir, blacklist, output_file):
                 try:
                     # Append file content to the output file
                     with open(file_path, 'r') as f:
-                        output.write(f"\n\n--- {file_path} ---\n\n")  # Add file header
+                        output.write(f"--------------------------------------")  # Add file header
+                        output.write(f"\n {file_path} \n")  # Add file header
+                        output.write(f"--------------------------------------\n")  # Add file header
                         output.write(f.read())
                 except Exception as e:
                     print(f"Error reading file {file_path}: {e}")
